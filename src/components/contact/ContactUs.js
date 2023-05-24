@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 const ContactUs = () => {
     return (
@@ -5,8 +6,8 @@ const ContactUs = () => {
     <div className="container">
       <div className="py-20">
         <div className="flex flex-col justify-center items-center mb-6 md:mb-8">
-          <div className="relative">
-            <img src="/assets/images/share/leaf.png" alt="" />
+          <div>
+            <Image src="/assets/images/share/leaf.png" alt="" width={190} height={104} />
           </div>
           <div className="absolute flex flex-col justify-center items-center">
             <h3 className="font-Playfair font-semibold text-2xl xl:text-5xl text-text_color mb-2">

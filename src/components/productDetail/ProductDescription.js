@@ -217,7 +217,7 @@ const ProductDescription = ({ data }) => {
                 <h3 className="font-Montserrat font-semibold text-sm md:text-base text-text_color mb-4">
                   Guaranteed Checkout :
                 </h3>
-                <div className="flex gap-3 md:gap-6">
+                {/* <div className="flex gap-3 md:gap-6">
                 <button className="border px-[6px] md:px-[10px] py-[11px] md:py-[17px] rounded-md">
                   <img className="w-[32px] md:w-[49px] h-[11px] md:h-4" src='/assets/images/checkout/visa-logo.svg'
                     alt="" />
@@ -236,7 +236,7 @@ const ProductDescription = ({ data }) => {
                   <img className="w-[32px] md:w-[50px] h-[13px] md:h-5" src='/assets/images/checkout/GooglePay.svg'
                     alt="" />
                 </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

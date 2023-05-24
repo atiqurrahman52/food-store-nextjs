@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState } from "react";
 
 const SingleCart = ({ data }) => {
@@ -8,10 +9,12 @@ const SingleCart = ({ data }) => {
       <div className="flex justify-between">
         <div className="flex justify-center gap-3 md:gap-4">
           <div>
-            <img
+            <Image
               className="rounded-xl w-[90px] md:w-[99px] h-[90px] md:h-[99px]"
               src={img}
               alt=""
+              width={99}
+              height={99}
             />
           </div>
           <div>

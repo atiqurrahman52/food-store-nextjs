@@ -7,12 +7,17 @@ import Image from "next/image";
 import Link from "next/link";
 const BlogNews = () => {
   return (
-    <section id="blog">
+  
       <div className="container">
         <div className="py-20">
           <div className="flex flex-col justify-center items-center mb-8">
             <div className="relative">
-              <Image src='/assets/images/share/leaf.png' alt="" width={190} height={104} />
+              <Image
+                src="/assets/images/share/leaf.png"
+                alt=""
+                width={190}
+                height={104}
+              />
             </div>
             <div className="absolute flex flex-col justify-center items-center">
               <h3 className="font-Playfair font-semibold text-2xl xl:text-5xl text-text_color mb-2">
@@ -27,52 +32,48 @@ const BlogNews = () => {
           <div className="grid grid-cols-12 gap-6">
             <div className="col-span-12 lg:col-span-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {
-                    blogData.map(({id,img,title,calendar,date,user,userName}) =>(
-                        <div key={id} className="relative overflow-hidden rounded-xl">
-                  <Link href={`/blog/${id}`}>
-                  {/* <Link href='/blog-detail'> */}
-                    <img
-                      className="w-full"
-                      src={img}
-                      alt=""
-                    />
-                 
-                  <div className="absolute bg-[#18271BB8] p-6 bottom-0 w-full">
-                    <p className="font-Montserrat font-medium text-sm md:text-base text-white mb-4 md:mb-3">
-                    {title}
-                    </p>
-                    <div className="flex justify-between rounded-b-lg">
-                      <div className="flex space-x-2">
-                        <span className="w-3 md:w-5 h-3 md:h-5">
-                        
-                          {calendar}
-                        </span>
-                        <span className="font-Montserrat font-medium text-[10px] md:text-sm text-white">
-                          {date}
-                        </span>
-                      </div>
-                      <div className="flex space-x-2">
-                        <span className="w-3 md:w-5 h-3 md:h-5">
-                        {user}
-                        </span>
-                        <span className="font-Montserrat font-medium text-[10px] md:text-sm text-white">
-                          {userName}
-                        </span>
-                      </div>
+                {blogData.map(
+                  ({ id, img, title, calendar, date, user, userName }) => (
+                    <div
+                      key={id}
+                      className="relative overflow-hidden rounded-xl"
+                    >
+                      <Link href={`/blog/${id}`}>
+                        <Image className="w-ful" src={img} alt="" width={356} height={347} />
+
+                        <div className="absolute bg-[#18271BB8] p-6 bottom-0 w-full">
+                          <p className="font-Montserrat font-medium text-sm md:text-base text-white mb-4 md:mb-3">
+                            {title}
+                          </p>
+                          <div className="flex justify-between rounded-b-lg">
+                            <div className="flex space-x-2">
+                              <span className="w-3 md:w-5 h-3 md:h-5">
+                                {calendar}
+                              </span>
+                              <span className="font-Montserrat font-medium text-[10px] md:text-sm text-white">
+                                {date}
+                              </span>
+                            </div>
+                            <div className="flex space-x-2">
+                              <span className="w-3 md:w-5 h-3 md:h-5">
+                                {user}
+                              </span>
+                              <span className="font-Montserrat font-medium text-[10px] md:text-sm text-white">
+                                {userName}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </Link>
                     </div>
-                  </div>
-                  </Link>
-                </div>
-                    ))
-                }
+                  )
+                )}
               </div>
 
               <div className="block lg:hidden">
                 <div className="flex justify-between items-center mt-5">
                   <button className="flex items-center gap-2 border border-[#F5F5F7] py-[6px] md:py-2.5 px-2 md:px-4 shadow-[0_1px_2px_rgba(16,24,40,0.05)] rounded-lg">
                     <span>
-                      
                       <ArrowLeft size={16} className="text-[#838D8F]" />
                     </span>
                     <span className="font-Montserrat font-medium text-[10px] md:text-sm text-[#838D8F]">
@@ -111,7 +112,6 @@ const BlogNews = () => {
                     </span>
 
                     <span>
-                     
                       <ArrowRight size={16} className="text-text_color" />
                     </span>
                   </button>
@@ -125,15 +125,14 @@ const BlogNews = () => {
                   Blog Archives
                 </h3>
                 <div className="space-y-4">
-                 
-                  {
-                    blogArchivesData.map(({id,name}) =>(
-                        <h4 key={id} className="font-Montserrat text-xs md:text-base text-p_text">
-                       {name}
-                      </h4>
-                    ))
-                  }
-                
+                  {blogArchivesData.map(({ id, name }) => (
+                    <h4
+                      key={id}
+                      className="font-Montserrat text-xs md:text-base text-p_text"
+                    >
+                      {name}
+                    </h4>
+                  ))}
                 </div>
               </div>
 
@@ -142,32 +141,21 @@ const BlogNews = () => {
                   Recent Posts
                 </h3>
                 <div className="space-y-5">
-                    {
-                        recentPostData.map(({id,img,title,date}) =>(
-                            <Link href="#" key={id} className="flex items-center gap-3">
-                            <div>
-                             
-                               
-                                <img
-                                  className="rounded-xl"
-                                  src={img}
-                                  alt=""
-                                />
-                            
-                            </div>
-                            <div>
-                              <h3 className="mb-3 font-Montserrat font-medium text-sm text-text_color">
-                              {title}
-                              </h3>
-                              <span className="font-Montserrat font-medium text-xs text-[#699C47]">
-                                {date}
-                              </span>
-                            </div>
-                          </Link>
-                        ))
-                    }
-
-
+                  {recentPostData.map(({ id, img, title, date }) => (
+                    <Link href="#" key={id} className="flex items-center gap-3">
+                      <div>
+                        <img className="rounded-xl" src={img} alt="" />
+                      </div>
+                      <div>
+                        <h3 className="mb-3 font-Montserrat font-medium text-sm text-text_color">
+                          {title}
+                        </h3>
+                        <span className="font-Montserrat font-medium text-xs text-[#699C47]">
+                          {date}
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
                 </div>
               </div>
 
@@ -176,15 +164,14 @@ const BlogNews = () => {
                   Tags
                 </h3>
                 <div className="space-y-4 space-x-2">
-                  {
-                    foodTagsData.map(({id,name}) =>(
-                    <button key={id} className="py-[6px] px-[14px] bg-white rounded-full font-Montserrat text-sm text-p_text">
-                     {name}
-                  </button>
-                    ))
-                  }
-                  
-                
+                  {foodTagsData.map(({ id, name }) => (
+                    <button
+                      key={id}
+                      className="py-[6px] px-[14px] bg-white rounded-full font-Montserrat text-sm text-p_text"
+                    >
+                      {name}
+                    </button>
+                  ))}
                 </div>
               </div>
 
@@ -214,7 +201,6 @@ const BlogNews = () => {
             <div className="flex justify-between items-center mt-5">
               <button className="flex items-center gap-2 border border-[#F5F5F7] py-[6px] md:py-2.5 px-2 md:px-4 shadow-[0_1px_2px_rgba(16,24,40,0.05)] rounded-lg">
                 <span>
-                  
                   <ArrowLeft size={20} className="text-[#838D8F]" />
                 </span>
                 <span className="font-Montserrat font-medium text-[10px] md:text-sm text-[#838D8F]">
@@ -253,15 +239,14 @@ const BlogNews = () => {
                 </span>
 
                 <span>
-                <ArrowRight size={20} className="text-text_color" />
-                
+                  <ArrowRight size={20} className="text-text_color" />
                 </span>
               </button>
             </div>
           </div>
         </div>
       </div>
-    </section>
+   
   );
 };
 

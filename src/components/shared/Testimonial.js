@@ -4,7 +4,7 @@ const Testimonial = () => {
   return (
     <section id="testimonial">
       <div className="container">
-        <div className="py-16">
+        <div className="pt-10">
           <div className="flex flex-col justify-center items-center mb-8">
             <div className="relative">
               <Image src="/assets/images/share/leaf.png" alt="" width={190} height={104} />

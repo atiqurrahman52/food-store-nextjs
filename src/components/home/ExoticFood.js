@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import exoticFoodData from "../../data/home/exoticFoodData";
 const ExoticFood = () => {
@@ -8,7 +7,12 @@ const ExoticFood = () => {
         <div className="py-16">
           <div className="flex flex-col justify-center items-center mb-8">
             <div className="relative">
-              <Image src="/assets/images/share/leaf.png" alt="" width={190} height={104} />
+              <Image
+                src="/assets/images/share/leaf.png"
+                alt=""
+                width={190}
+                height={104}
+              />
             </div>
             <div className="absolute flex flex-col justify-center items-center">
               <h3 className="font-Playfair font-semibold text-2xl xl:text-5xl text-text_color mb-2">
@@ -23,7 +27,7 @@ const ExoticFood = () => {
             {exoticFoodData.map(
               ({ id, img, title, calendar, date, user, userName }) => (
                 <div key={id} className="relative overflow-hidden rounded-xl">
-                  <img className="w-full" src={img} alt="" />
+                  <Image className="w-full" src={img} alt="" width={356} height={347} />
                   <div className="absolute bg-[#18271BB8] p-6 bottom-0 w-full">
                     <p className="font-Montserrat font-medium text-sm md:text-base text-white mb-4 md:mb-3">
                       {title}

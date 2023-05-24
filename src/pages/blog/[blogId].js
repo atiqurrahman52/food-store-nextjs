@@ -4,7 +4,7 @@ import blogData from "@/data/blog/blogData";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-const blogDetail = () => {
+const BlogDetail = () => {
     const router = useRouter()
     const { id } = router.query
 
@@ -24,4 +24,4 @@ const blogDetail = () => {
   );
 };
 
-export default blogDetail;
+export default BlogDetail;

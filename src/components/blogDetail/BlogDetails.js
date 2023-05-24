@@ -1,10 +1,8 @@
 // import RecentPost from "./RecentPost";
 // import Reviews from "./Reviews";
-// import blog_2 from  '../../assets/images/blog-details/blog-detail-2.webp';
-// import blog_3 from  '../../assets/images/blog-details/blog-detail-3.webp';
-// import blog_4 from  '../../assets/images/blog-details/blog-detail-4.webp';
-// import blog_5 from  '../../assets/images/blog-details/blog-detail-5.webp';
 
+
+import Image from "next/image";
 import RecentPost from "./RecentPost";
 import Reviews from "./Reviews";
 
@@ -172,15 +170,19 @@ const BlogDetails = ({data}) => {
                   </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <img
+                  <Image
                     className="rounded-xl w-full "
                     src="/assets/images/blog-details/blog-detail-2.webp"
                     alt=""
+                    width={404}
+                    height={309}
                   />
-                  <img
+                  <Image
                     className="rounded-xl w-full"
                     src="/assets/images/blog-details/blog-detail-3.webp"
                     alt=""
+                    width={404}
+                    height={309}
                   />
                 </div>
                 <div>
@@ -196,10 +198,12 @@ const BlogDetails = ({data}) => {
                   </p>
                   <div className="grid grid-cols-12 gap-6">
                     <div className="col-span-12 md:col-span-4">
-                      <img
+                      <Image
                         className="h-full w-full rounded-xl"
                         src="/assets/images/blog-details/blog-detail-4.webp"
                         alt=""
+                        width={261}
+                        height={192}
                       />
                     </div>
                     <div className="col-span-12 md:col-span-8">
@@ -245,10 +249,12 @@ const BlogDetails = ({data}) => {
                       </p>
                     </div>
                     <div>
-                      <img
+                      <Image
                         className="w-full rounded-xl"
                         src="/assets/images/blog-details/blog-detail-5.webp"
                         alt=""
+                        width={261}
+                        height={192}
                       />
                     </div>
                   </div>

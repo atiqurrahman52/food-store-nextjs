@@ -1,7 +1,7 @@
 const exoticFoodData = [
   {
     id: 0,
-    img: "assets/images/exotix-food/image-1.webp",
+    img: "/assets/images/exotix-food/image-1.webp",
     title: "Bring in your books tomorrow. Watch the video to ",
     calendar: (
       <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,7 +104,7 @@ const exoticFoodData = [
 
   {
     id: 1,
-    img: "assets/images/exotix-food/image-2.webp",
+    img: "/assets/images/exotix-food/image-2.webp",
     title: "Apparently we had reached a great height",
     calendar: (
       <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -207,7 +207,7 @@ const exoticFoodData = [
 
   {
     id: 2,
-    img: "assets/images/exotix-food/image-3.webp",
+    img: "/assets/images/exotix-food/image-3.webp",
     title: "Undertake examination skills work booklet",
     calendar: (
       <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">

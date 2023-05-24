@@ -1,6 +1,7 @@
 import AboutBanner from "@/components/about/AboutBanner";
 import AboutUs from "@/components/about/AboutUs";
-import TeamMember from "@/components/about/TeamMember";
+import TeamMembers from "@/components/about/TeamMembers";
+
 import Fqa from "@/components/shared/Fqa";
 import Testimonial from "@/components/shared/Testimonial";
 
@@ -9,7 +10,7 @@ const about = () => {
     <div>
       <AboutBanner />
       <AboutUs />
-      <TeamMember />
+      <TeamMembers />
       <Testimonial />
       <Fqa />
     </div>

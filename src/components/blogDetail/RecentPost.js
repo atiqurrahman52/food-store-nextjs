@@ -1,4 +1,5 @@
 import recentPostData from "@/data/blog/recentPostData";
+import Image from "next/image";
 import Link from "next/link";
 
 
@@ -57,7 +58,7 @@ const RecentPost = () => {
 
            <Link href="#" className="flex items-center gap-3">
             <div>
-              <img className="rounded-xl" src="/assets/images/blog/post-1.webp" alt="" />
+              <Image className="rounded-xl" src="/assets/images/blog/post-1.webp" alt="" width={71} height={71} />
             </div>
             <div>
               <h3 className="mb-3 font-Montserrat font-medium text-sm text-text_color">
@@ -72,7 +73,7 @@ const RecentPost = () => {
 
           <Link href="#" className="flex items-center gap-3">
             <div>
-              <img className="rounded-xl" src="/assets/images/blog/post-2.webp" alt="" />
+              <Image className="rounded-xl" src="/assets/images/blog/post-2.webp" alt="" width={71} height={71} />
             </div>
             <div>
               <h3 className="mb-3 font-Montserrat font-medium text-sm text-text_color">
@@ -86,7 +87,7 @@ const RecentPost = () => {
           </Link>
           <Link href="#" className="flex items-center gap-3">
             <div>
-              <img className="rounded-xl" src="/assets/images/blog/post-3.webp" alt="" />
+              <Image className="rounded-xl" src="/assets/images/blog/post-3.webp" alt="" width={71} height={71} />
             </div>
             <div>
               <h3 className="mb-3 font-Montserrat font-medium text-sm text-text_color">

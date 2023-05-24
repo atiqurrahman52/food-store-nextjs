@@ -8,11 +8,11 @@ import Image from "next/image";
 import teamMemberData from "@/data/about/teamMemberData";
 import Link from "next/link";
 
-const TeamMember = () => {
+const TeamMembers = () => {
   return (
     <section id="team_member">
       <div className="container">
-        <div className="py-20">
+        <div className="py-2">
           <div className="flex flex-col justify-center items-center mb-8">
             <div className="relative">
               <Image src='/assets/images/share/leaf.png' alt="" width={190} height={104} />
@@ -68,7 +68,7 @@ const TeamMember = () => {
                 <SwiperSlide key={id}>
                   <div className="border rounded-xl overflow-hidden">
                     <div className="mb-6">
-                      <img className="w-full" src={img} alt="" />
+                      <Image className="w-full" src={img} alt="" width={261} height={261} />
                     </div>
                     <h5 className="font-Montserrat font-medium text-sm md:text-base text-primary_3 text-center mb-5">
                       {designation}
@@ -96,4 +96,4 @@ const TeamMember = () => {
   );
 };
 
-export default TeamMember;
+export default TeamMembers;

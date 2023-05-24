@@ -29,7 +29,7 @@ const ProductImages = ({data}) => {
         {
           data?.gallery?.map((item, i) => (
             <SwiperSlide key={i} className="bg-[#F5F5F5] rounded-3xl">
-            <img src={item} className="w-full h-full pt-6 md:pt-[35px] pb-[14px] md:pb-6 px-[45px] md:px-[86px]"/>
+            {/* <img src={item} className="w-full h-full pt-6 md:pt-[35px] pb-[14px] md:pb-6 px-[45px] md:px-[86px]"/> */}
           </SwiperSlide>
           ))
         }
@@ -47,7 +47,7 @@ const ProductImages = ({data}) => {
         {
           data?.gallery?.map((item, i) => (
             <SwiperSlide key={i} className="bg-[#F5F5F5] rounded-xl border border-primary_3 h-[166px] overflow-hidden">
-            <img src={item} className="w-full"/>
+            {/* <img src={item} className="w-full"/> */}
           </SwiperSlide>
           ))
         }

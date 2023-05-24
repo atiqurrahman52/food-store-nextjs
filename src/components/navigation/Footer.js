@@ -9,6 +9,7 @@ import cardData from "@/data/footer/cardData";
 import socialSvgData from "@/data/footer/socialSvgData";
 import supportData from "@/data/footer/supportData";
 import navbarData from "@/data/navigation/navbarData";
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -19,7 +20,13 @@ const Footer = () => {
           <div className="grid grid-cols-12 py-16 gap-6">
             <div className="col-span-12 md:col-span-4">
               <Link href="/">
-                <img className="mb-6 md:mb-[18px]" src="/assets/images/logo/logo-2.webp" alt="logo" />
+                <Image
+                  className="mb-6 md:mb-[18px]"
+                  src="/assets/images/logo/logo-2.webp"
+                  alt="logo"
+                  width={134}
+                  height={48}
+                />
               </Link>
               <p className="font-Montserrat text-xs md:text-base text-[#E6F6FF] mb-6 md:mb-10">
                 Lorem Ipsum is simply dummy text of the and typesetting
@@ -164,10 +171,10 @@ const Footer = () => {
                   All Rights Reserved @ Company 2023
                 </p>
               </div>
-              <ul className="flex space-x-3 md:space-x-6">
+              <ul className="flex items-center space-x-3 md:space-x-6">
                 {cardData.map(({ id, cardImg }) => (
-                  <li key={id} className="w-[38px] md:w-[62px] h-3 md:h-5">
-                    <img src={cardImg} alt="" />
+                  <li key={id} className="">
+                    <Image src={cardImg} alt="" width={50} height={20} />
                   </li>
                 ))}
               </ul>
