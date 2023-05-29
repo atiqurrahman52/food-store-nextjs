@@ -91,13 +91,13 @@ const FeaturedProduct = () => {
           ))}
         </ul>
 
-        <div id="tab-1" className="tab-content current">
+        {/* <div> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {tabData.map((item, i) => (
               <ProductCard key={i} data={item} />
             ))}
           </div>
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );

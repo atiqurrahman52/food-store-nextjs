@@ -1,7 +1,8 @@
 import Image from "next/image";
-import leaf from "../../assets/images/share/leaf.png";
-
 import ProductCard from "../shop/ProductCard";
+
+
+
 
 const RelatedProduct = ({ data }) => {
   return (
@@ -9,7 +10,7 @@ const RelatedProduct = ({ data }) => {
       <div className="py-20">
         <div className="flex flex-col justify-center items-center mb-8">
           <div className="relative">
-            <Image src={leaf} alt="" width={190} height={104} />
+            <Image src='/assets/images/share/leaf.png' alt="" width={190} height={104} />
           </div>
           <div className="absolute flex flex-col justify-center items-center">
             <h3 className="font-Playfair font-semibold text-2xl xl:text-5xl text-text_color mb-2">

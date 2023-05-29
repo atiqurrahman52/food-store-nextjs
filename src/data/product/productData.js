@@ -1,8 +1,6 @@
-
-
 const productData = [
   {
-    id: 0,
+    id: '0',
     img: "/assets/images/shop/banana.webp",
     gallery: [
       "/assets/images/shop/banana.webp",
@@ -38,7 +36,7 @@ const productData = [
     ],
   },
   {
-    id: 1,
+    id: '1',
     img: "/assets/images/shop/cucumber.webp",
     gallery: [
       "/assets/images/shop/cucumber.webp",
@@ -88,7 +86,7 @@ const productData = [
     ],
   },
   {
-    id: 2,
+    id: '2',
     img: "/assets/images/shop/pepper.webp",
     gallery: [
       "/assets/images/shop/pepper.webp",
@@ -131,7 +129,7 @@ const productData = [
     ],
   },
   {
-    id: 3,
+    id: '3',
     img: "/assets/images/shop/grape.webp",
     gallery: [
       "/assets/images/shop/grape.webp",
@@ -174,7 +172,7 @@ const productData = [
     ],
   },
   {
-    id: 4,
+    id: '4',
     img: "/assets/images/shop/pine-apple.webp",
     gallery: [
       "/assets/images/shop/pine-apple.webp",
@@ -217,7 +215,7 @@ const productData = [
     ],
   },
   {
-    id: 5,
+    id: '5',
     img: "/assets/images/shop/coconut.webp",
     gallery: [
       "/assets/images/shop/coconut.webp",
@@ -260,7 +258,7 @@ const productData = [
     ],
   },
   {
-    id: 6,
+    id: '6',
     img: "/assets/images/shop/broccoli.webp",
     gallery: [
       "/assets/images/shop/broccoli.webp",
@@ -303,7 +301,7 @@ const productData = [
     ],
   },
   {
-    id: 7,
+    id: '7',
     img: "/assets/images/shop/carrot.webp",
     gallery: [
       "/assets/images/shop/carrot.webp",
@@ -346,7 +344,7 @@ const productData = [
     ],
   },
   {
-    id: 8,
+    id: '8',
     img: "/assets/images/shop/bean.webp",
     gallery: [
       "/assets/images/shop/bean.webp",

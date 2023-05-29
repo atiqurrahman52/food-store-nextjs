@@ -4,6 +4,7 @@ import ProductImages from "./ProductImages";
 import Star from "./Star";
 
 const ProductDescription = ({ data }) => {
+  console.log("My data", data);
   const [quantity, setQuantity] = useState(0);
   const {
     productName,
@@ -30,7 +31,7 @@ const ProductDescription = ({ data }) => {
                   {productName}
                 </h3>
                 <div className="flex items-center gap-3 mb-5">
-                 {/* {rating} */}
+                 {rating}
                   <div className="cursor-pointer"> <Star rating ={rating} /></div>
                   <div>
                     <span>( 4 Customer Review )</span>
