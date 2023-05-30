@@ -1,15 +1,18 @@
 import { useState } from "react";
+import Star from "./Star";
 
 const ProductReviews = ({ data }) => {
+  console.log("Reviews Data", data);
   const [tabActive, setTabActive] = useState("description");
 
   const { description, rating, reviews } = data;
+  console.log("Jow Reviews:", reviews);
 
   return (
     <div className="container">
-      <div className="py-16 md:py-20">
-        <div className="tabbedPanels">
-          <ul className="tabs flex justify-center gap-5 pb-3">
+      <div className="py-1">
+        <div className="">
+          <ul className="flex justify-center gap-5 pb-3">
             {["description", "reviews"].map((item, i) => (
               <li
                 key={i}
@@ -35,7 +38,7 @@ const ProductReviews = ({ data }) => {
                 </p>
               </div>
             ) : (
-              <div id="panel2" className="panel">
+              <div>
                 <p className="font-Montserrat font-medium text-xl text-text_color mb-6">
                   {reviews?.length} Review{reviews?.length > 1 && "s"}
                 </p>
@@ -67,7 +70,7 @@ const ProductReviews = ({ data }) => {
                         </div>
                         <div className="border p-6 rounded-3xl">
                           <ul className="flex mb-[10px]">
-                            {rating < 5
+                            {/* {rating < 5
                               ? [...Array(Number(rating))]
                                   .map((item, i) => (
                                     <li key={i}>
@@ -137,7 +140,9 @@ const ProductReviews = ({ data }) => {
                                       />
                                     </svg>
                                   </li>
-                                ))}
+                                ))} */}
+                                {/* <Star /> */}
+                                <Star rating={rating} />
                           </ul>
 
                           <div>
@@ -145,8 +150,8 @@ const ProductReviews = ({ data }) => {
                               <span className="font-Montserrat font-semibold text-sm md:text-base text-text_color">
                                 {userName}
                               </span>
-                              <span className="font-Montserrat text-xs md:text-base text-p_text">
-                                {dateOfComment}
+                              <span className="font-Montserrat text-xs md:text-base text-p_text pl-3">
+                               - {dateOfComment}
                               </span>
                             </div>
                             <p className="font-Montserrat text-xs md:text-base text-p_text mb-[10px]">
@@ -178,6 +183,8 @@ const ProductReviews = ({ data }) => {
                     )
                   )}
                 </div>
+
+
                 <form>
                   <h3 className="font-Montserrat font-semibold text-sm md:text-xl text-text_color mb-4">
                     Add your rating
