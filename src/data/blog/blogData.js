@@ -1,10 +1,10 @@
 const blogData = [
   {
-    id: 0,
+    id: '0',
     img: "/assets/images/blog/blog-1.webp",
     title: "Apparently we had reached a great height  ",
-    calendar: (
-      <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    calendar: 
+      `<svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M6.66602 2.16602V4.66602"
           stroke="white"
@@ -79,12 +79,12 @@ const blogData = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-      </svg>
-    ),
+      </svg>`
+    ,
 
     date: "March 02.2022",
-    user: (
-      <svg
+    user: 
+     `<svg
         width="14"
         height="19"
         viewBox="0 0 14 19"
@@ -98,16 +98,16 @@ const blogData = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-      </svg>
-    ),
+      </svg>`
+    ,
     userName: "by Richi Card",
   },
   {
-    id: 1,
+    id: '1',
     img: "/assets/images/blog/blog-2.webp",
     title: " How and when to replace brake rotors ",
-    calendar: (
-      <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    calendar: 
+      `<svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M6.66602 2.16602V4.66602"
           stroke="white"
@@ -182,12 +182,12 @@ const blogData = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-      </svg>
-    ),
+      </svg>`
+    ,
 
     date: "March 02.2022",
-    user: (
-      <svg
+    user: 
+      `<svg
         width="14"
         height="19"
         viewBox="0 0 14 19"
@@ -201,16 +201,16 @@ const blogData = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-      </svg>
-    ),
+      </svg>`
+    ,
     userName: "by Richi Card",
   },
   {
-    id: 2,
+    id: '2',
     img: "/assets/images/blog/blog-3.webp",
     title: "Electric Car Maintenance, Servicing & Repairs  ",
-    calendar: (
-      <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    calendar: 
+      `<svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M6.66602 2.16602V4.66602"
           stroke="white"
@@ -285,12 +285,12 @@ const blogData = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-      </svg>
-    ),
+      </svg>`
+    ,
 
     date: "March 02.2022",
-    user: (
-      <svg
+    user: 
+      `<svg
         width="14"
         height="19"
         viewBox="0 0 14 19"
@@ -304,16 +304,16 @@ const blogData = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-      </svg>
-    ),
+      </svg>`
+    ,
     userName: "by Richi Card",
   },
   {
-    id: 3,
+    id: '3',
     img: "/assets/images/blog/blog-4.webp",
     title: "How to: Make Your Tires Last Longer ",
-    calendar: (
-      <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    calendar: 
+      `<svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M6.66602 2.16602V4.66602"
           stroke="white"
@@ -388,12 +388,12 @@ const blogData = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-      </svg>
-    ),
+      </svg>`
+    ,
 
     date: "March 02.2022",
-    user: (
-      <svg
+    user: 
+      `<svg
         width="14"
         height="19"
         viewBox="0 0 14 19"
@@ -407,16 +407,16 @@ const blogData = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-      </svg>
-    ),
+      </svg>`
+    ,
     userName: "by Richi Card",
   },
   {
-    id: 4,
+    id: '4',
     img: "/assets/images/blog/blog-5.webp",
     title: "onstructive and destructive waves ",
-    calendar: (
-      <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    calendar: 
+      `<svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M6.66602 2.16602V4.66602"
           stroke="white"
@@ -491,12 +491,12 @@ const blogData = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-      </svg>
-    ),
+      </svg>`
+    ,
 
     date: "March 02.2022",
-    user: (
-      <svg
+    user: 
+      `<svg
         width="14"
         height="19"
         viewBox="0 0 14 19"
@@ -510,16 +510,16 @@ const blogData = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-      </svg>
-    ),
+      </svg>`
+    ,
     userName: "by Richi Card",
   },
   {
-    id: 5,
+    id: '5',
     img: "/assets/images/blog/blog-6.webp",
     title: " Writing piece and Memorise account ",
-    calendar: (
-      <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    calendar: 
+      `<svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M6.66602 2.16602V4.66602"
           stroke="white"
@@ -594,12 +594,12 @@ const blogData = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-      </svg>
-    ),
+      </svg>`
+    ,
 
     date: "March 02.2022",
-    user: (
-      <svg
+    user: 
+      `<svg
         width="14"
         height="19"
         viewBox="0 0 14 19"
@@ -613,8 +613,8 @@ const blogData = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-      </svg>
-    ),
+      </svg>`
+    ,
     userName: "by Richi Card",
   },
 ];

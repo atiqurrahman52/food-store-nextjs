@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
 const ProductDetail = ({ singleProduct }) => {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
   // console.log("ALL DATA", productData);
 

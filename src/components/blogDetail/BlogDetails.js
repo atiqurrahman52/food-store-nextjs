@@ -10,8 +10,8 @@ import Reviews from "./Reviews";
 
 const BlogDetails = ({data}) => {
   // const newData = data.find((item) => item !== undefined);
-//   const { img, title } = data;
-//   console.log('my data', data);
+  const { img, title } = data;
+  console.log('my data', data);
   return (
     <div>
       <div className="container">
@@ -22,7 +22,7 @@ const BlogDetails = ({data}) => {
                 <div>
                   <h3 className="font-Playfair font-semibold text-xl md:text[32px] text-text_color text-center mb-3">
                    
-                    {/* {title} */}
+                    {title}
                   </h3>
                   <div className="flex justify-center gap-3 mb-6 md:mb-8">
                     <div className="flex items-center gap-[6px]">
@@ -137,11 +137,13 @@ const BlogDetails = ({data}) => {
                       </span>
                     </div>
                   </div>
-                  {/* <img
+                  <Image
                     className="rounded-3xl  w-full"
                     src={img}
                     alt=""
-                  /> */}
+                    width={831}
+                    height={350}
+                  />
                  
                 </div>
                 <div>
