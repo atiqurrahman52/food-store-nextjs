@@ -32,9 +32,7 @@ const ProductDescription = ({ data }) => {
                   {productName}
                 </h3>
                 <div className="flex items-center gap-3 mb-5">
-                  {rating}
                   <div className="cursor-pointer">
-                    {" "}
                     <Star rating={rating} />
                   </div>
                   <div>
