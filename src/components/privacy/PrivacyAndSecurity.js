@@ -4,7 +4,7 @@ import privacyData from "../../data/privacy/privacyData";
 const PrivacyAndSecurity = () => {
   const [tabActive, setTabActive] = useState(0);
   const [data, setData] = useState(privacyData[tabActive]);
-
+  console.log("All Data", data);
   useEffect(() => {
     setData(privacyData[tabActive]);
   }, [tabActive, data]);

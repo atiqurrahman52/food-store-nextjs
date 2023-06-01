@@ -27,9 +27,10 @@
   /* Background End */
   
   /* Navlink Active  */
-   .activePage{
+   .nav-link{
     @apply text-primary_3 font-Montserrat font-semibold px-4 py-[10px] bg-[#F5F5F5] rounded-xl
-  }
+  } 
+  
   
   .categories:hover svg path {
     fill: white;

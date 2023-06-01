@@ -23,7 +23,7 @@ const TopCategories = () => {
           {topCategoriesData.map(({ id, name, quantity, icon }) => (
             <div
               key={id}
-              className="w-[140px] xl:w-[166px] min-h-[170px] categories group hover:bg-primary_3 bg-[#EEF2F3] rounded-2xl p-2.5 xl:p-4 flex flex-col justify-center items-center"
+              className="transition-all duration-400 ease-linear w-[140px] xl:w-[166px] min-h-[170px] categories group hover:bg-primary_3 bg-[#EEF2F3] rounded-2xl p-2.5 xl:p-4 flex flex-col justify-center items-center"
             >
               <span className="mb-2 xl:mb-4 pt-2 xl:pt-4">{icon}</span>
               <h5 className="text-center mb-2 xl:mb-2.5 font-Montserrat font-medium text-sm xl:text-base group-hover:text-white text-text_color">

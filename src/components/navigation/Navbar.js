@@ -2,11 +2,18 @@ import { useEffect, useState } from "react";
 import navbarData from "../../data/navigation/navbarData";
 import Link from "next/link";
 import Image from "next/image";
-import { Heart, List, Path, ShoppingCart, UserCircle, X } from "@phosphor-icons/react";
+import {
+  Heart,
+  List,
+  Path,
+  ShoppingCart,
+  UserCircle,
+  X,
+} from "@phosphor-icons/react";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
-   const router = useRouter();
+  const router = useRouter();
   const [menu, setIsMenu] = useState(false);
 
   useEffect(() => {
@@ -35,13 +42,19 @@ const Navbar = () => {
                 <li key={id}>
                   <Link
                     href={path}
-                    className={`font-Montserrat text-base text-text_color ${router.pathname === Path ? "nav-link" :""}`}
+                    className={`font-Montserrat text-base text-text_color ${
+                      router.pathname === path ? "nav-link" : ""
+                    }`}
                   >
                     {title}
                   </Link>
                 </li>
               ))}
+
+              
             </ul>
+
+
 
             <div className="flex gap-4 md:gap-5">
               <button className="bg-[#F2F2F2] py-2 px-2 rounded-full">
@@ -77,8 +90,13 @@ const Navbar = () => {
                   key={i}
                   className="font-Montserrat border-b w-full text-base md:px-4 p-2.5"
                 >
-                  <Link href={path} className={`text-text_color ${router.pathname === path? "nav-link": ""}`}>
-                    {title} 
+                  <Link
+                    href={path}
+                    className={`text-text_color ${
+                      router.pathname === path ? "nav-link" : ""
+                    }`}
+                  >
+                    {title}
                   </Link>
                 </li>
               ))}
